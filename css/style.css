@@ -1,0 +1,18 @@
+.container{
+    margin-top: 20px;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+.cim{
+    display: inline-block;
+}
+
+background{
+    color: burlywood;
+}
+#idojaras{
+    margin-top: 10px;
+    background-color: coral;
+}

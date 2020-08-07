@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/selectors.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <div class="login-div">
+        <div id="form-group">
+            <label>E-mail</label>
+            <input class="form-control" type="email" name="email">
+        </div>
+
+        <div id="form-group">
+        <label>Password</label>
+        <div class="password">
+
+            <input class="form-control" type="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <button class="sumit-btn">Login</button>
+        </div>
+
+        <ul>
+            <li>Tej</li>
+            <li>Kenyer</li>
+            <li>Szotyi</li>
+        </ul>
+
+        <form>
+            <fieldset>
+                <legend>Szemelyes adatok</legend>
+            <div>
+                <label for="name">Nev:</label><!--for miatt egymashoz tartoznak a cimkek-->
+                <input id="name" name="name" type="text" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+                <label for="address">Cim:</label>
+                <input id="address" name="address" type="text" required>
+            </div>
+            <div>
+                <label for="megjegyzes">Megjegyzes:</label>
+                <textarea id="megjegyzes" name="megjegyzes" type="text" rows="5"></textarea>
+            </div>
+        </fieldset>
+        </form>
+        <fieldset>
+            <legend>Termek adatai</legend>
+        <span>Extrafeltet</span>
+        <div>
+            <input checked id="nothing" name="extra" type="radio" value="0"><!--chechbox helyett a tipusa radio gomb-->
+            <label for="nothing">Nem kerek</label>
+        </div>
+        <div>
+            <input id="cheese" name="extra" type="radio" value="300"><!--radio gombnak mindnek a nevenek meg kell egyeznie-->
+            <label for="cheese">Sajt</label>
+        </div>
+        <div>
+            <input id="extra-cheese" name="extra" type="radio" value="300">
+            <label for="extra-cheese">Extra sajt</label>
+        </div>
+        <div>
+            <input id="extra-meat" name="extra" type="radio" value="600">
+            <label for="extra-meat">Extra hus</label>
+        </div>
+        <div>
+            <input id="double-meat" name="extra" type="radio" value="1000">
+            <label for="double-meat">Dupla hus</label>
+        </div>
+        <div>
+            <input id="double-double" name="extra" type="radio" value="1800">
+            <label for="double-double">Megtobb hus</label>
+        </div>
+        <div>
+            <input id="valami-mas" name="extra" type="radio" value="1600">
+            <label for="valami-mas">Zoldseg</label>
+        </div>
+        <div>
+            <label for="szoszok">Szoszok</label>
+            <select id="szoszok" name=szoszok>
+                <option value="0" selected>ketchup</option>
+                <option value="100">majonez</option>
+        </div>
+        <div>
+            <label for="quantity">Mennyiseg:</label>
+            <input id="quantity" name="quantity" type="number" min="1" max="10" value="1">
+        </div>
+    </fieldset>
+        <div>
+            <input type="button" value="Rendeles leadasa"> Ar: <span>1200</span>Ft
+        </div>
+    
+</body>
+
+</html>

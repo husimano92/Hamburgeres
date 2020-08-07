@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/fooldal.html">Navigáció</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/fooldal.html">Főoldal <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login.html">Belépés</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/rendeles.html">Rendelés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Felhasználók</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">Kapcsolat</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <nav id="idojaras" class="navbar navbar-expand-lg navbar-white bg-coral">
+        <a>Idojarasi adatok</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link">Celsius <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Fahrenheit</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">Kinalatunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Felhasználók</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">Kapcsolat</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-warning">Időjárás szerinti ajánlatok</button>
+                <div class="col-12 col-md-6 col-lg-12"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="col-6"></div>
+            <h3 class="cim">Hamburger rendeles</h3>
+            <div class="col-12">
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Kedves vasarlonk!</strong> 
+                A rendeleshez kerjuk toltse ki az urlapot!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-3">
+            <form id="orderForm" action="">
+                <div class="form-group">
+                    <label for="">Feltet</label>
+                    <select id="topInput" name="top-input" class="form-control"></select>
+                    <!--<input id="topInput" type="text" name="top-input" class="form-control">-->
+                </div>
+                <div class="form-group">
+                    <label for="">Mennyiseg</label>
+                    <input type="number" name="amount-input" class="form-control" value="1">
+                    <small class="from-text text-muted">
+                        Minimum 1, maximum 10db.
+                    </small>
+                </div>
+                <div class="form-group">
+                    Fizetendo: <span class="show-amount">0</span>Ft
+                </div>
+                <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendeles</button>
+                <!--Hogy modositottam igy ez a gomb egy kuldes gomb is lesz, egy submit gomb es igy a kattintasra mar el fogja kuldeni az uralomat-->
+                <!--<button type="submit" class="btn btn-primary">Megrendeles</button>-->
+
+            </form>
+        </div>
+            <div class="col-3"></div>
+
+        </div>
+
+    </div>
+
+    <script
+        src="/rs/rmain.js"> /*alert("Hello JS");--javascript, megvarja a bongeszo amig a felhasznalo kattint valamire*/</script>
+    <script src="/rs/scope.js"></script>
+
+</body>
+
+</html>
